@@ -5,3 +5,7 @@ https://www.highcharts.com/docs/working-with-data/data-module
 
 http://www.knowstack.com/webtech/charts_demo/highchartsdemo5.html
 
+figure out how to update chart every 15minutes (when new data logged)
+  https://stackoverflow.com/questions/26536187/is-it-possible-to-dynamically-update-a-rendered-template-in-flask-server-side
+  https://bitbucket.org/jeunice/flask-ws-example
+  http://code.runnable.com/UiPhLHanceFYAAAP/how-to-perform-ajax-in-flask-for-python
