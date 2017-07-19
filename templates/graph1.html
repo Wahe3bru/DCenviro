@@ -1,0 +1,18 @@
+{% extends "header.html" %}
+{% block body %}
+
+<body>
+    <p> First Chart </p>
+       <p> Test </p>
+        <div id="my-chart"></div>
+        <script type = "text/javascript" src = " {{ url_for('static', filename='css/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery-1.11.3.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/highcharts.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/exporting.js') }}"></script>  
+        <script type="text/javascript">
+	new Highcharts.Chart({{chart|safe}});
+        </script>   
+    
+</body>
+
+{% endblock %}
