@@ -1,6 +1,8 @@
 <html>
-<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='css/bootstrap.css') }}"> 
+<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
 <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="30">  <!-- change refresh rate -->
 <head>
 
 </head>
@@ -30,12 +32,20 @@
   </div><!-- /.container-fluid -->
 </nav>
 <body id="class">
-    <body>
-	    <H1>{{ title }}</H1>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <H1>{{ title }}</H1>
+        <p> {{ subtitle }} </p>
+        <br/>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button"> Go to graphs >></a> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more >></a></p>
+      </div>
+    </div>
+
 		{% for p in paragraph %}
 		<p>{{ p }}</p>
 		{% endfor %}
-		
+
 		{% block body %}
 		{% endblock %}
 	</body>
