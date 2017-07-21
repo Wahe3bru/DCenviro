@@ -14,4 +14,6 @@ figure out how to update chart every 15minutes (when new data logged)
   The simplest way is probably to include this bit of html which will force the page to refresh every 30 seconds:
      <meta http-equiv="refresh" content="30">                
 
+Add a parameter to your app.run(). 
+By default it runs on localhost, change it to app.run(host= '0.0.0.0') to run on your machines IP address.
 
